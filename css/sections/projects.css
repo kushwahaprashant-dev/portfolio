@@ -5,27 +5,63 @@
     gap: 32px;
 }
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .project-card {
+    border-radius: 16px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+    --hover-border-color: #0a84ff; /* Default fallback */
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+}
+
+/* The true border-only spinning gradient using CSS masks */
+.project-card::after {
+    content: '';
+    position: absolute;
+    inset: -1px; /* Align perfectly over the existing 1px border */
+    border-radius: 16px;
+    padding: 1px; /* 1px border thickness */
+    background: conic-gradient(from var(--angle), transparent 20%, transparent 60%, var(--hover-border-color) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: card-spin-angle 3s linear infinite;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 40px rgba(10, 132, 255, 0.1);
+    border-color: transparent; /* Hide the static border when glowing */
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+@keyframes card-spin-angle {
+    0% { --angle: 0deg; }
+    100% { --angle: 360deg; }
 }
 
 .project-image {
     width: 100%;
     aspect-ratio: 16 / 9;
     position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .project-content {

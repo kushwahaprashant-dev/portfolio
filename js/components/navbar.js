@@ -4,7 +4,7 @@ export function renderNavbar(containerId) {
 
     container.innerHTML = `
         <div class="container nav-container">
-            <a href="#" class="logo">KP<span>.</span></a>
+            <a href="#" class="logo">Kushwaha Prashant<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>

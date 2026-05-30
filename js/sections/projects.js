@@ -20,9 +20,27 @@ export function renderProjects(containerId) {
         </div>
     `;
 
-    // Attach click listeners to cards to open modal
+    // Helper to generate a random bright color for the border
+    function getRandomColor() {
+        const hue = Math.floor(Math.random() * 360);
+        return `hsl(${hue}, 100%, 65%)`; // using HSL for guaranteed bright/vibrant colors
+    }
+
+    // Attach interactions to cards
     const cards = container.querySelectorAll('.project-card');
     cards.forEach(card => {
+        // Random color on hover
+        card.addEventListener('mouseenter', () => {
+            const color = getRandomColor();
+            card.style.setProperty('--hover-border-color', color);
+            card.style.boxShadow = `0 10px 40px ${color.replace(')', ', 0.2)').replace('hsl', 'hsla')}`;
+        });
+
+        // Reset shadow on leave
+        card.addEventListener('mouseleave', () => {
+            card.style.boxShadow = '';
+        });
+
         card.addEventListener('click', (e) => {
             // Ignore if the user clicked one of the external links inside the card
             if (e.target.closest('a')) return;
