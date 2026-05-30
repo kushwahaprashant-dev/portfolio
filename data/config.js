@@ -40,6 +40,13 @@ export const siteConfig = {
         {
             title: "E-Commerce Platform",
             description: "A scalable headless e-commerce solution with inventory management, cart state, and Stripe payment processing.",
+            longDescription: "A fully custom e-commerce solution designed from the ground up for high-performance and scalability. The architecture uses a headless approach, completely decoupling the React frontend from the Node.js backend. This allows for lightning-fast page loads and a seamless shopping experience.",
+            features: [
+                "Headless architecture for independent frontend/backend scaling",
+                "Real-time inventory tracking and cart synchronization",
+                "Secure payment processing integrated with Stripe API",
+                "Comprehensive admin dashboard for order and product management"
+            ],
             tags: ["React", "Node.js", "MongoDB"],
             gradient: "linear-gradient(135deg, #1e3a8a, #0f172a)",
             githubUrl: "#",
@@ -48,6 +55,13 @@ export const siteConfig = {
         {
             title: "Real-time Chat App",
             description: "A highly concurrent messaging platform featuring live typing indicators, group rooms, and unread notifications.",
+            longDescription: "Built to demonstrate real-time WebSocket capabilities, this chat application supports multiple concurrent users, persistent chat history, and instant notifications. The backend relies on Express and Socket.io to manage active connections efficiently.",
+            features: [
+                "Live bi-directional communication using WebSockets",
+                "Typing indicators and presence tracking (online/offline status)",
+                "Group chat rooms with role-based access control",
+                "End-to-end message persistence and unread counts"
+            ],
             tags: ["Socket.io", "Express", "React"],
             gradient: "linear-gradient(135deg, #065f46, #022c22)",
             githubUrl: "#",
@@ -56,6 +70,13 @@ export const siteConfig = {
         {
             title: "Task Management SaaS",
             description: "A productivity suite for teams utilizing Kanban methodologies, calendar integration, and rich analytics.",
+            longDescription: "A comprehensive project management tool aimed at agile teams. The application features a deeply interactive Kanban board with drag-and-drop capabilities, rich text descriptions, and real-time syncing across team members' devices.",
+            features: [
+                "Interactive drag-and-drop Kanban boards",
+                "Full calendar view integration with deadline syncing",
+                "Team collaboration features, comments, and file attachments",
+                "Advanced performance analytics and time-tracking dashboard"
+            ],
             tags: ["Next.js", "PostgreSQL", "Prisma"],
             gradient: "linear-gradient(135deg, #7e22ce, #3b0764)",
             githubUrl: "#",
@@ -64,6 +85,13 @@ export const siteConfig = {
         {
             title: "AI Image Generator",
             description: "A deep learning web app that interfaces with stable diffusion APIs to generate and edit high-res images from text.",
+            longDescription: "An exploration into generative AI. This platform allows users to input natural language prompts and instantly generate unique, high-resolution images. It manages complex background tasks and asynchronous polling gracefully on the frontend.",
+            features: [
+                "Integration with Stable Diffusion text-to-image models",
+                "Custom gallery to save, upvote, and share generated artwork",
+                "Advanced image editing parameters (guidance scale, steps, seed)",
+                "FastAPI backend for asynchronous processing of intensive ML tasks"
+            ],
             tags: ["Python", "FastAPI", "React"],
             gradient: "linear-gradient(135deg, #b91c1c, #450a0a)",
             githubUrl: "#",

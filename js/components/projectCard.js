@@ -7,7 +7,7 @@ export function renderProjectCard(project, index) {
     const liveIcon = `<svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>`;
 
     return `
-        <div class="project-card reveal delay-${delay}">
+        <div class="project-card reveal delay-${delay}" data-index="${index}">
             <div class="project-image" style="background: ${project.gradient};"></div>
             <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
