@@ -16,15 +16,19 @@ export function renderContact(containerId) {
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required placeholder="Project Inquiry">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" class="form-control" required placeholder="How can I help you?"></textarea>
+                        <textarea id="message" name="message" class="form-control" required placeholder="How can I help you?"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
                 </form>

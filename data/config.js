@@ -13,27 +13,27 @@ export const siteConfig = {
         text: "I'm a software engineer deeply passionate about building exceptional products. With a strong foundation in modern web technologies, I focus on crafting scalable architectures and intuitive interfaces. Whether it's architecting a robust backend API or perfecting a micro-interaction on the frontend, I obsess over the details that make an application truly great.",
         imageUrl: "", // Handled by CSS gradient in this version, could add URL here later
         stats: [
-            { number: "3+", label: "Years Experience" },
-            { number: "20+", label: "Projects Built" },
-            { number: "10+", label: "Happy Clients" }
+            { number: "2+", label: "Years Experience" },
+            { number: "5+", label: "Projects Built" },
+            { number: "5+", label: "Happy Clients" }
         ]
     },
     skills: [
         {
             category: "Frontend",
-            items: ["React", "Next.js", "TypeScript", "HTML/CSS"]
+            items: ["React", "JavaScript", "TypeScript", "HTML/CSS", "Tailwind CSS", "Material UI"]
         },
         {
             category: "Backend",
-            items: ["Node.js", "Express", "Python", "REST APIs", "GraphQL"]
+            items: ["Node.js", "Express", "REST APIs", "PhP"]
         },
         {
             category: "Database",
-            items: ["MongoDB", "PostgreSQL", "MySQL"]
+            items: ["MySQL"]
         },
         {
             category: "DevOps & Tools",
-            items: ["Git", "Docker", "AWS"]
+            items: ["Git"]
         }
     ],
     projects: [
@@ -119,9 +119,11 @@ export const siteConfig = {
         }
     ],
     contact: {
-        email: "hello@example.com",
+        email: "kushwaha.prashant.dev@gmail.com",
         github: "#",
         linkedin: "#",
-        twitter: "#"
-    }
+        twitter: "#",
+        // Paste your Google Apps Script Web App URL below:
+        googleScriptUrl: "https://script.google.com/macros/s/AKfycbyKUzuYJZUN8ZHExUjpeeCaH7JWL_zb_8YTE0FI0zrA4ySeTRnyA9BQjDas4luWm7hh/exec"
+    },
 };
