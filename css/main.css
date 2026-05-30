@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@import './variables.css';
+@import './global.css';
+
+@import './components/navbar.css';
+@import './components/buttons.css';
+
+@import './sections/hero.css';
+@import './sections/about.css';
+@import './sections/skills.css';
+@import './sections/projects.css';
+@import './sections/experience.css';
+@import './sections/contact.css';

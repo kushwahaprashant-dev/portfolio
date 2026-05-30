@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Developer Portfolio</title>
+    <!-- Modular CSS entry point -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!-- Navbar Container -->
+    <nav id="navbar"></nav>
+
+    <!-- Mobile Menu Overlays -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Main Content Sections -->
+    <main>
+        <section id="hero"></section>
+        <section id="about"></section>
+        <section id="skills"></section>
+        <section id="projects"></section>
+        <section id="experience"></section>
+        <section id="contact"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <!-- Main Script (ES6 Module) -->
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
