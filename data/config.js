@@ -1,13 +1,13 @@
 export const siteConfig = {
     meta: {
-        title: "Full Stack Developer Portfolio",
-        author: "Alex Carter",
-        copyright: "© 2026. Designed and built with ❤️ by Prashant."
+        title: "Full Stack Developer",
+        author: "Kushwaha Prashant",
+        copyright: "© 2026. Designed and built with ❤️ by Kushwaha Prashant."
     },
     hero: {
         title: "Full Stack Developer",
-        typewriterPhrases: ["React Developer", "Node.js Engineer", "UI/UX Enthusiast", "Problem Solver"],
-        bio: "Building robust, scalable web applications with elegant user interfaces. I bridge the gap between design and engineering to create seamless digital experiences."
+        typewriterPhrases: ["Custom Web Developer", "Frontend Developer", "Backend Developer", "React Developer", "Node.js Engineer", "UI/UX Enthusiast", "Problem Solver", "JavaScript Developer", "Jquery Developer"],
+        bio: "Building high-performance, scalable web applications with intuitive user interfaces. I bridge the gap between technical engineering and thoughtful design to deliver seamless digital experiences."
     },
     about: {
         text: "I'm a software engineer deeply passionate about building exceptional products. With a strong foundation in modern web technologies, I focus on crafting scalable architectures and intuitive interfaces. Whether it's architecting a robust backend API or perfecting a micro-interaction on the frontend, I obsess over the details that make an application truly great.",
@@ -21,7 +21,7 @@ export const siteConfig = {
     skills: [
         {
             category: "Frontend",
-            items: ["React", "JavaScript", "TypeScript", "HTML/CSS", "Tailwind CSS", "Material UI"]
+            items: ["React", "JavaScript", "jQuery", "TypeScript", "HTML/CSS", "Tailwind CSS", "Material UI"]
         },
         {
             category: "Backend",
