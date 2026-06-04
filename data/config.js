@@ -2,7 +2,7 @@ export const siteConfig = {
     meta: {
         title: "Full Stack Developer Portfolio",
         author: "Alex Carter",
-        copyright: "© 2024. Designed and built with ❤️ by Alex Carter."
+        copyright: "© 2026. Designed and built with ❤️ by Prashant."
     },
     hero: {
         title: "Full Stack Developer",
