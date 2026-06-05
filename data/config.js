@@ -13,7 +13,7 @@ export const siteConfig = {
         text: "I'm a software engineer deeply passionate about building exceptional products. With a strong foundation in modern web technologies, I focus on crafting scalable architectures and intuitive interfaces. Whether it's architecting a robust backend API or perfecting a micro-interaction on the frontend, I obsess over the details that make an application truly great.",
         imageUrl: "", // Handled by CSS gradient in this version, could add URL here later
         stats: [
-            { number: "2+", label: "Years Experience" },
+            { number: "2.5+", label: "Years Experience" },
             { number: "5+", label: "Projects Built" },
             { number: "5+", label: "Happy Clients" }
         ]
@@ -51,6 +51,12 @@ export const siteConfig = {
             category: "DevOps & Tools",
             items: [
                 { name: "Git", icon: "devicon-git-plain colored" }
+            ]
+        },
+        {
+            category: "CMS",
+            items: [
+                { name: "WordPress", icon: "devicon-wordpress-plain" }
             ]
         }
     ],
