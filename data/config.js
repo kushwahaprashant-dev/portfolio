@@ -21,19 +21,37 @@ export const siteConfig = {
     skills: [
         {
             category: "Frontend",
-            items: ["React", "JavaScript", "jQuery", "TypeScript", "HTML/CSS", "Tailwind CSS", "Material UI"]
+            items: [
+                { name: "React", icon: "devicon-react-original colored" },
+                { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+                { name: "jQuery", icon: "devicon-jquery-plain colored" },
+                { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+                { name: "HTML5", icon: "devicon-html5-plain colored" },
+                { name: "CSS3", icon: "devicon-css3-plain colored" },
+                { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
+                { name: "Material UI", icon: "devicon-materialui-plain colored" }
+            ]
         },
         {
             category: "Backend",
-            items: ["Node.js", "Express", "REST APIs", "PhP"]
+            items: [
+                { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+                { name: "Express", icon: "devicon-express-original" },
+                { name: "PHP", icon: "devicon-php-plain colored" },
+                { name: "REST APIs", icon: "devicon-postman-plain colored" }
+            ]
         },
         {
             category: "Database",
-            items: ["MySQL"]
+            items: [
+                { name: "MySQL", icon: "devicon-mysql-plain colored" }
+            ]
         },
         {
             category: "DevOps & Tools",
-            items: ["Git"]
+            items: [
+                { name: "Git", icon: "devicon-git-plain colored" }
+            ]
         }
     ],
     projects: [
